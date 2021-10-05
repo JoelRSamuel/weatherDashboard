@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="images/cloud (2).png">
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="state-weather-entry">
+            <input type="text" id="city"/>
+            <input type="text" id="state"/>
+            <button id="submit-button" onclick="getWeatherInfo()">Get Weather Info</button>
+        </div>
+        
+        <div class="current-info" id="">
+
+            <div class="date-container">
+                <div class="time" id="time">
+                    12:30<span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">Monday, 25 May
+                </div>
+                <div class="others" id="current-weather-items">
+  
+                    
+                </div>
+
+        
+            </div>
+
+            <div class="place-container">
+                <div class="time-zone" id="time-zone"><h1>State/City</h1></div>
+                <div id="country" class="country"><h1>USA</h1></div>
+            </div>
+        </div>    
+    </div>
+
+    <div class="future-forecast">
+            
+        <div class="today" id="current-temp">
+            
+        </div>
+        
+
+        <div class="weather-forecast" id="weather-forecast">
+            
+
+        </div>
+    </div>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
